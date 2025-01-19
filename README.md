@@ -32,7 +32,7 @@ https://r-htpc.github.io/wiki/components
 
 # Notes
 What am I trying to host?
-- Games - return to moria, wow, maybe minecraft
+- Games - return to moria, maybe minecraft
 - Photos - all digitized photos that I have
 - Music - burn CDs, all digital files, digitize vinyl eventually
 - Movies - burn dvds and blurays, digitize VHS, any digital files
