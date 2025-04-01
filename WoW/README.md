@@ -1,0 +1,1 @@
+https://github.com/NoM0Re/WoW-3.3.5a-Addons?tab=readme-ov-file
