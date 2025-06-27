@@ -7,6 +7,7 @@
 - [DVDs](#dvds)
     - [Use makemkv](#use-makemkv)
     - [To edit/rename the resulting files](#to-editrename-the-resulting-files)
+    - [TV Shows Naming Convention for Plex](#tv-shows-naming-convention-for-plex)
     - [For inspecting video/audio files](#for-inspecting-videoaudio-files)
 - [Hardware](#hardware)
     - [Supporting Plex Transcoding](#supporting-plex-transcoding)
@@ -54,6 +55,28 @@ https://www.makemkv.com
 ### To edit/rename the resulting files
 
 https://mkvtoolnix.download
+
+To split "one" DVD into multiple episodes, follow these steps:
+- Load the file: Open MKVToolNix and load your video file (e.g., an .mkv file ripped from the DVD using MakeMKV).
+- Navigate to Output settings: Go to the "Output" tab within the MKVToolNix interface.
+- Select Split mode: Locate the "Splitting" section and choose "Before chapters" as the Split mode.
+- Specify chapter numbers:
+    - To split at every chapter (effectively separating each episode if the DVD is authored with episode chapters), enter "all" in the "Chapter numbers" field.
+    - If you want to split only at specific chapters, enter the chapter numbers as a comma-separated list (e.g., "1,3,5" to split at chapters 1, 3, and 5).
+    - Make sure to not put a space after the chapter numbers or the process will error out.
+    - Not acceptable list: ("1, 2, 3, 4, 5")
+    - Accetable list: ("1,2,3,4,5")
+- Choose output destination: Specify the folder where you want the split episode files to be saved.
+- Start the process: Click the "Start multiplexing" button to begin the splitting process.
+
+### TV Shows Naming Convention for Plex
+
+To get your TV episodes to show up correctly on Plex, follow this naming convention on your server:
+`TV Shows/TV Show Name (First Season Date)/Season 01/TV Show Name (First Season Date) - s01e01 - Episode Name`
+
+Example: `H:\TV Shows\David Attenborough's Natural Curiosities (2013)\Season 03\David Attenborough's Natural Curiosities (2013) - s03e01 - Impossible Feats.mkv`
+
+Reference: https://support.plex.tv/articles/naming-and-organizing-your-tv-show-files/
 
 ### For inspecting video/audio files
 
